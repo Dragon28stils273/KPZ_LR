@@ -25,4 +25,4 @@ dataframe = pd.concat([dataframe, new_row], ignore_index=True)
 
 dataframe.to_csv(csv_file_path)
 
-print("Дані успішно додані та збережені у файл:", csv_file_path)
+print(csv_file_path)
