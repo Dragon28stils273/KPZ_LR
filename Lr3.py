@@ -64,7 +64,7 @@ def main():
         results["Prediction"] = results.apply(interpret_signals, axis=1)
 
         results.loc[:, ['RSI', 'CCI', 'MACD', 'MACDs', 'Prediction']].to_csv('prediction.csv', index=False)
-        print("Prediction saved to prediction.csv")
+        print("prediction.csv")
     except Exception as e:
         print(f"An error occurred: {e}")
 
