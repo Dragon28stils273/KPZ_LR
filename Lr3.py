@@ -46,7 +46,6 @@ def main():
             end_str=str(today)
         )
 
-        # Dynamically handling the columns based on fetched data
         col_names = ['time', 'open', 'high', 'low', 'close'] + ['extra_' + str(i) for i in range(len(k_lines[0]) - 5)]
         k_lines_df = pd.DataFrame(k_lines, columns=col_names)
         k_lines_df = k_lines_df[['time', 'open', 'high', 'low', 'close']]  # Keep only the required columns
